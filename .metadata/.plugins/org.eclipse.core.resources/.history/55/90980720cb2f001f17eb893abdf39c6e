@@ -1,0 +1,5 @@
+spring.application.name=camel-microservice-samar
+
+server.port=8081
+
+logging.level.org.apache.camel=INFO

@@ -1,0 +1,26 @@
+package com.apache.camel.ajit.camel_microservice_akj.akjController;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/rest/v1")
+public class TimerController {
+	
+	@Autowired
+	@Lazy
+	TimerController timerController;
+	
+	
+	@PostMapping("/stopTimer/{time}")
+	public void stopTimer(@PathVariable("time") long timeToStop) throws InterruptedException{
+		Thread.sleep(timeToStop);
+		timerController.stopTimer(timeToStop);
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.apache.camel.ajit.camel_microservice_akj.timer;
+
+
+import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.spi.RouteController;
+import org.springframework.stereotype.Component;
+
+@Component
+public class TimerRouter extends RouteBuilder{
+
+	@Override
+	public void configure() throws Exception {
+		from("timer:timerJee?period=5000&delay=5000&repeatCount=20")
+		.to("log:timer-jee");
+		
+	}
+
+	public void stopTimer() throws Exception {
+		getContext().getRouteController().stopRoute("timerJee");
+		
+	}
+}
