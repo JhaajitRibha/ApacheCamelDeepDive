@@ -1,5 +1,0 @@
-package com.apache.camel.ajit.camel_microservice_akj.utility;
-
-public class Person {
-
-}

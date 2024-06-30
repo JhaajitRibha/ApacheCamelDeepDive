@@ -1,0 +1,6 @@
+<FileDynamics>
+    <fileName>xmlTesting.xml</fileName>
+    <fileType>xml is being tested</fileType>
+    <fileContent>
+        This is an example xml file content</fileContent>
+</FileDynamics>

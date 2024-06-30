@@ -1,0 +1,1 @@
+docker exec -it ajitSftp /bin/sh -  to open sftp in docker container.

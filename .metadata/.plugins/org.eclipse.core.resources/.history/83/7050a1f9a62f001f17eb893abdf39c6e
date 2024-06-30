@@ -1,3 +1,0 @@
-spring.application.name=camel-microservice-akj
-
-logging.level.org.apache.camel=DEBUG
