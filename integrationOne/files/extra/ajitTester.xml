@@ -1,6 +1,5 @@
 <FileDynamics>
     <fileName>xmlTestingTwo.xml</fileName>
     <fileType>xml two is being tested</fileType>
-    <fileContent>
-        This is an example xml two file content</fileContent>
+    <fileContent>This is an example xml two file content</fileContent>
 </FileDynamics>
